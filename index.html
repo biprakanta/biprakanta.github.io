@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biprakanta Pal — Tech Lead, Payments Infrastructure & Distributed Systems</title>
+<meta name="description" content="Biprakanta Pal — Engineering leader with 10+ years across payments infrastructure, data platforms, and distributed systems at scale.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">BP</a>
+    <nav class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">Résumé</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Tech Lead · Setu (a Pine Labs company)</p>
+      <h1>Biprakanta Pal</h1>
+      <p class="hero-role">Payments Infrastructure &amp; Distributed Systems</p>
+      <p class="hero-summary">
+        Engineering leader with 10+ years across payments infrastructure, data platforms, and distributed
+        systems at scale. Currently leading two engineering charters at Setu — BBPS bank-side payments
+        (TSP for Axis, Canara, AU, Ujjivan, IDFC) and the core Platform group — after building and scaling
+        the Identity/Data Gateway and Data Insights platforms from the ground up. Early and pragmatic
+        adopter of AI-native engineering, with a proven record of taking platforms from 0→1, running
+        production incident command at bank-grade bars, and building high-retention engineering teams.
+      </p>
+      <div class="hero-actions">
+        <a href="mailto:biprakanta.pal@gmail.com" class="btn btn-primary">Get in touch</a>
+        <a href="https://linkedin.com/in/biprakanta" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+      </div>
+      <div class="hero-meta">
+        <span>Bengaluru, India</span>
+        <span class="dot">·</span>
+        <span>+91 9862242376</span>
+        <span class="dot">·</span>
+        <span>biprakanta.pal@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">years in payments &amp; distributed systems</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">15×</span>
+        <span class="stat-label">throughput scaled on Data Insights (2→30+ TPS)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">10×</span>
+        <span class="stat-label">faster PR cycle time (12d → 1.2d)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">99.9%</span>
+        <span class="stat-label">SLO driven on identity platforms</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="section-num">01</span>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <h3>Tech Lead</h3>
+            <p class="job-company">Setu (a Pine Labs company) · Bengaluru, India</p>
+          </div>
+          <p class="job-dates">01/2023 — Present</p>
+        </div>
+
+        <div class="role">
+          <h4>BBPS &amp; Platform Engineering — Lead: Platform &amp; BBPS, dual charter <span>2026 — Present</span></h4>
+          <ul>
+            <li>Lead engineering for Setu's BBPS TSP business across bank operating units (Axis, Canara, AU, Ujjivan, IDFC, PhonePe-side OUs) — owning delivery cadence, on-call, capacity planning for peak traffic, and NPCI compliance including SSL signer certificate rotation across all BBPS stacks.</li>
+            <li>Simultaneously lead the central Platform team (Kong API gateway, account service, OPA/OPAL authorization, Lago billing, ClickHouse observability) serving every Setu product line.</li>
+            <li><strong>Account-service crisis leadership:</strong> ran incident command through recurring company-wide login outages — root-caused OPA/OPAL memory crashes, drove the structural fix decoupling auth from OPA, moved OPAL to redundant nodes, and owned RCA communications with CTO-level stakeholders.</li>
+            <li>Drove RCA and remediation for a Kong/WAF rate-limit outage impacting Pine Labs aggregator and Plural traffic, including a cross-layer WAF-rule review.</li>
+            <li>Diagnosed and same-day-fixed a billing charge-leakage incident during the Lago migration, closing out preventive actions including lag alerting on billing pipelines.</li>
+            <li>Founded the BBPS Production Engineering (FDE) team — authored the charter and JD, secured headcount, hired a Production Engineer Lead (SRE), and stood up NPCI connectivity, certificate management, and DR operations.</li>
+            <li>Own regulatory and network compliance for BBPS: RBI quarterly submissions, NPCI MTLS migration readiness, and DR drills with NPCI and partner banks.</li>
+            <li>Cut infrastructure cost via ClickHouse log-retention policy, S3 log reduction (~₹3L/month targeted savings), and RDS reserved-instance right-sizing.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <h4>SignalIQ / AutoDI — 0→1 product incubation <span>2026</span></h4>
+          <ul>
+            <li>Incubating AutoDI, a 0→1 bet under Setu's SignalIQ data products charter: automated bank-statement ingestion via Account Aggregator and PDF flows feeding underwriting analytics (BSA).</li>
+            <li>Authored the AutoDI product overview and AA-flow integration guide; unblocked Switchboard × SignalIQ billing integration for commercial launch.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <h4>Data Gateway — Identity Products <span>2025 — 2026</span></h4>
+          <ul>
+            <li>Took over a mission-critical team post-org churn; rebuilt the team and drove availability from 99.5% (eSign) / 98.6% (RPD) toward a 99.9% SLO — zero DG-attributed P0 incidents across the cycle.</li>
+            <li><strong>Switchboard (API Orchestrator):</strong> owned the software architecture and shipped a vendor-agnostic orchestration platform end-to-end — 3-layer routing with a per-minute vendor health state machine, six routing strategies, and fully automated partner failover.</li>
+            <li>Designed the BYOC (Bring Your Own Credentials) commercial model; took Tata Capital live as the first BYOC customer.</li>
+            <li>Migrated RPD fully onto Switchboard (CITI + Slice live) with sandbox-first rollout and documented rollback; built automated AM-Lock failover rerouting Yesbank traffic to CITI.</li>
+            <li>Shipped Bundled BAV and eSign V4, delivering conversion lifts for ETMoney (+10.4%), Univest (+5.6%), Angel One (+4.7%).</li>
+            <li>Drove pod PR merge time from 12 days → 1.2 days (10×); built 6 reusable AI-assisted "Codex skill" runbooks cutting vendor-integration time from weeks to days.</li>
+            <li>Raised the quality bar: 60% unit/integration coverage, SonarQube gates on every MR, and owned three concurrent security audits (source review, VAPT, data-localization SAR) with Cyraacs and PwC.</li>
+            <li>Crisis leadership: when a partner withdrew VPA-to-BAV access for a 60-RPS client, scoped and shipped a replacement product within hours.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <h4>Data Insights Platform <span>2023 — 2024</span></h4>
+          <ul>
+            <li>Spearheaded the Data Insights platform from POC to production, scaling throughput 15× (2 → 30+ TPS) via horizontally scaled async workers.</li>
+            <li>Built configurable indicator pipelines and templatized transformer DAGs for dynamic ETL flows (&lt;5s response), versioned with DVC.</li>
+            <li>Established Git strategy, gated CI/CD, and automated testing; initiated the MLOps charter (Databricks, SageMaker, TrueFoundry).</li>
+            <li>Led the architectural modernization that evolved into Setu's SignalIQ analytics suite.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job job-compact">
+        <div class="job-head">
+          <div>
+            <h3>Senior Software Engineer</h3>
+            <p class="job-company">Maximl Labs</p>
+          </div>
+          <p class="job-dates">06/2021 — 12/2022</p>
+        </div>
+        <ul>
+          <li>Designed an asynchronous Analytics Microservice (ServiceBus/SNS/SQS/NSQ) with CI/CD and Helm-based Kubernetes templating.</li>
+          <li>Migrated a monolith to microservices; managed and mentored a team of 5 developers.</li>
+        </ul>
+      </div>
+
+      <div class="job job-compact">
+        <div class="job-head">
+          <div>
+            <h3>Senior Software Engineer</h3>
+            <p class="job-company">LeadSOC Pvt Ltd</p>
+          </div>
+          <p class="job-dates">11/2020 — 05/2021</p>
+        </div>
+        <ul>
+          <li>Built a data pipeline and visualization platform comparing chipset performance metrics across designs.</li>
+        </ul>
+      </div>
+
+      <div class="job job-compact">
+        <div class="job-head">
+          <div>
+            <h3>Software Engineer III</h3>
+            <p class="job-company">FactSet Research Systems · Hyderabad</p>
+          </div>
+          <p class="job-dates">06/2018 — 11/2020</p>
+        </div>
+        <ul>
+          <li>Developed multithreaded Python/C++ pipelines for global financial data ingestion; contributed to an RNN-based text predictor (88% accuracy).</li>
+        </ul>
+      </div>
+
+      <div class="job job-compact">
+        <div class="job-head">
+          <div>
+            <h3>System Engineer</h3>
+            <p class="job-company">Infosys Ltd · Hyderabad</p>
+          </div>
+          <p class="job-dates">03/2016 — 06/2018</p>
+        </div>
+        <ul>
+          <li>Built predictive monitoring and dynamic runbooks for semiconductor batch operations (LAM Research); centralized error recovery across 20,000 scripts.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="section-num">02</span>Technical Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Payments &amp; Fintech</h3>
+          <p>BBPS (COU/BOU/TSP), NPCI integrations, vendor orchestration &amp; routing, billing/invoicing (Lago), reconciliation &amp; settlement, identity APIs (eSign, BAV, RPD, Aadhaar)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Languages &amp; Backend</h3>
+          <p>Python, Golang, Java, Flask, FastAPI, Django, Spring Boot, Celery, gRPC, REST API design, Kong API Gateway, OPA/OPAL</p>
+        </div>
+        <div class="skill-card">
+          <h3>Data &amp; Streaming</h3>
+          <p>PostgreSQL, Redis, Elasticsearch, ClickHouse, Kafka, Flink, Databricks, SageMaker, DVC, ETL/transformer DAGs, Account Aggregator pipelines</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud &amp; DevOps</h3>
+          <p>AWS (ECS, EC2, Lambda, S3, RDS, SNS/SQS), Azure, Kubernetes (Helm, Karpenter), Docker, GitLab CI/CD, Terraform, SonarQube, Grafana</p>
+        </div>
+        <div class="skill-card">
+          <h3>Delivery &amp; Velocity</h3>
+          <p>CI optimization, PR cycle time 12d → 1.2d, AI-assisted development at 3–4× velocity, reusable engineering runbooks, release/rollback discipline</p>
+        </div>
+        <div class="skill-card">
+          <h3>Reliability &amp; Security</h3>
+          <p>Incident command &amp; RCA, 99.9% SLO programs, on-call design, VAPT/SCR/audit ownership, PII safety</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leadership" class="section">
+    <div class="section-inner">
+      <h2 class="section-title"><span class="section-num">03</span>Leadership Highlights</h2>
+      <ul class="leadership-list">
+        <li>Dual-charter leadership: concurrently running BBPS payments engineering and the central Platform team — engineering, delivery, and reliability accountability across both.</li>
+        <li>Trusted incident commander for company-wide P0s, driving cross-functional RCAs reviewed with CTO-level stakeholders and owning external customer communications.</li>
+        <li>Team builder and people manager: rebuilt the Identity team from the ground up post-reorg — performance expectations, structured onboarding, knowledge-sharing, and AI-tooling coaching; low-attrition culture.</li>
+        <li><strong>AI-native engineering champion:</strong> instituted AI-assisted code reviews as early as 2023; published 6 reusable agent runbooks (Codex skills) standardizing how the team delegates implementation to AI; coaches a plan-first, "treat-the-agent-as-an-intern" workflow.</li>
+        <li>Owns the engineering hiring charter: drove EM and SDE hiring, founded and staffed the BBPS Production Engineering (FDE) function, and hired the founding member of the data science team.</li>
+      </ul>
+
+      <div class="education">
+        <h3>Education</h3>
+        <p><strong>B.Tech, Mechanical Engineering</strong> — National Institute of Technology, Agartala · 2015</p>
+        <p class="muted">CGPA 7.36/10 · Languages: English, Bengali, Hindi</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-contact">
+    <div class="section-inner contact-inner">
+      <h2>Let's talk.</h2>
+      <p>Open to conversations on payments infrastructure, platform engineering, and AI-native engineering teams.</p>
+      <div class="contact-links">
+        <a href="mailto:biprakanta.pal@gmail.com">biprakanta.pal@gmail.com</a>
+        <a href="tel:+919862242376">+91 9862242376</a>
+        <a href="https://linkedin.com/in/biprakanta" target="_blank" rel="noopener">linkedin.com/in/biprakanta</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Biprakanta Pal. Built and deployed with GitHub Pages.</p>
+</footer>
+
+</body>
+</html>
