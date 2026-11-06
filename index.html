@@ -116,14 +116,15 @@
         <div class="role">
           <h4>Data Gateway — Identity Products <span>2025 — 2026</span></h4>
           <ul>
-            <li>Took over a mission-critical team post-org churn; rebuilt the team and drove availability from 99.5% (eSign) / 98.6% (RPD) toward a 99.9% SLO — zero DG-attributed P0 incidents across the cycle.</li>
+            <li><strong>Team stabilization:</strong> took over a mission-critical team post-org churn and rebuilt it end-to-end — redesigning so no single engineer was a point of failure, driving availability from 99.5% (eSign) / 98.6% (RPD) to a 99.9% SLO, zero DG-attributed P0 incidents across the cycle.</li>
+            <li><strong>Process & knowledge continuity:</strong> closed the team's biggest operational risk — tribal knowledge sitting with one or two engineers — by rebuilding VAPT security documentation and product data dictionaries from scratch, running structured knowledge-transfer plans for engineers moving roles, and writing local-dev-server and partner-integration runbooks so any engineer could onboard and ship independently.</li>
+            <li><strong>Developer experience:</strong> built an automated stale-MR reminder (2-day SLA, daily digest) that helped cut pod PR merge time from 12 days to 1.2 days (10×); wired a support bot into on-call for instant end-to-end log triage; published 6 reusable AI-assisted "Codex skill" runbooks cutting vendor-integration time from weeks to days.</li>
+            <li><strong>On-call redesign:</strong> restructured on-call into a dual-layer model with clear ownership norms (own the chore, don't relay it) and a backup-coverage culture, then delegated the bulk of day-to-day Switchboard/RPD/eSign operations to a senior engineer on the team — freeing my own time for cross-product architecture and incident command.</li>
             <li><strong>Switchboard (API Orchestrator):</strong> owned the software architecture and shipped a vendor-agnostic orchestration platform end-to-end — 3-layer routing with a per-minute vendor health state machine, six routing strategies, and fully automated partner failover.</li>
             <li>Designed the BYOC (Bring Your Own Credentials) commercial model; took Tata Capital live as the first BYOC customer.</li>
             <li>Migrated RPD fully onto Switchboard (CITI + Slice live) with sandbox-first rollout and documented rollback; built automated AM-Lock failover rerouting Yesbank traffic to CITI.</li>
             <li>Owned live multi-vendor failover across eSign (eMudhra/NSDL) and RPD (CITI/Slice) — including the RPD provider cutover during Kotak's decommissioning and moving BAV onto active routing on Switchboard Pennydrop — holding success rates through partner-side outages.</li>
             <li>Shipped Bundled BAV and eSign V4, delivering conversion lifts for ETMoney (+10.4%), Univest (+5.6%), Angel One (+4.7%).</li>
-            <li>Scaled Switchboard/RPD/eSign operations by delegating the bulk of partner integrations and on-call to a senior engineer on the team, freeing my own time for cross-product architecture and incident command.</li>
-            <li>Drove pod PR merge time from 12 days → 1.2 days (10×); built 6 reusable AI-assisted "Codex skill" runbooks cutting vendor-integration time from weeks to days.</li>
             <li>Raised the quality bar: 60% unit/integration coverage, SonarQube gates on every MR, and owned three concurrent security audits (source review, VAPT, data-localization SAR) with Cyraacs and PwC.</li>
             <li>Crisis leadership: when a partner withdrew VPA-to-BAV access for a 60-RPS client, scoped and shipped a replacement product within hours.</li>
           </ul>
